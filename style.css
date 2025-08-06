@@ -132,7 +132,7 @@ body {
 }
 
 .menu-toggle {
-    display: none; /* Escondido, pois o menu foi removido */
+    display: none;
 }
 
 
@@ -180,7 +180,7 @@ body {
 
 .hero-text h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: -35px; /* Mantido conforme sua especificação */
 }
 
 .hero-text h2 {
@@ -288,7 +288,7 @@ body {
     display: block;
     font-size: 1.3em;
     color: var(--color-subtitle-grey);
-    margin-bottom: -25px; /* Mantido conforme sua especificação */
+    margin-bottom: 0px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -320,7 +320,7 @@ body {
     font-size: 1.5em;
     color: var(--color-subtitle-grey);
     margin-top: 10px;
-    margin-bottom: -30px; /* Mantido conforme sua especificação */
+    margin-bottom: -30px;
     font-weight: 700;
 }
 
@@ -496,18 +496,18 @@ body {
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
     margin-bottom: 30px;
-    text-align: center; /* CENTRALIZADO */
+    text-align: center;
 }
 
 .contact-info p {
-    color: var(--color-text-dark);
+    color: var(--color-text-dark); /* Corrigido para preto, como nas imagens de referência */
     font-size: 1.05em;
     margin-bottom: 12px;
     line-height: 1.4;
 }
 
 .contact-info p a {
-    color: var(--color-text-dark);
+    color: var(--color-text-dark); /* Cor do link para combinar com o texto */
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -524,30 +524,8 @@ body {
     margin-right: 5px;
 }
 
-.contact-info-cta-box {
-    background-color: var(--color-cannabis-dark-green);
-    color: var(--color-white);
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 30px;
-    text-align: left; /* Mantido como left para o bloco de CTA */
-    line-height: 1.5;
-}
-
-.contact-info-cta-box p {
-    color: var(--color-white);
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-.contact-info-cta-box p:last-child {
-    margin-bottom: 0;
-}
-
-.contact-info-cta-box strong {
-    color: var(--color-primary-green);
-    font-weight: 700;
-}
+/* Removido o estilo da caixa de CTA */
+/* .contact-info-cta-box foi removido do HTML, então os estilos dele não são mais necessários */
 
 /* Estilos para o formulário de contato (consolidados e corrigidos) */
 .contact-form-inner {
@@ -559,7 +537,7 @@ body {
     color: var(--color-text-medium);
     margin-bottom: 25px;
     line-height: 1.5;
-    text-align: center; /* CENTRALIZADO: Adicionado para centralizar o texto introdutório */
+    text-align: center;
 }
 
 .contact-form .form-group {
@@ -571,7 +549,7 @@ body {
     margin-bottom: 5px;
     color: var(--color-text-dark);
     font-weight: 500;
-    text-align: left; /* Mantido como left para os labels dos campos */
+    text-align: left;
 }
 
 .contact-form input,
@@ -588,7 +566,7 @@ body {
     resize: vertical;
 }
 
-.contact-form .btn.primary-btn { /* Estilo para o botão de envio */
+.contact-form .btn.primary-btn {
     width: auto;
     padding: 12px 30px;
     margin-top: 20px;
@@ -599,7 +577,6 @@ body {
     border-radius: 5px;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    /* NOVO: Propriedades para centralizar o botão */
     display: block;
     margin-left: auto;
     margin-right: auto;
