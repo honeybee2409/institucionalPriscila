@@ -288,7 +288,7 @@ body {
     display: block;
     font-size: 1.3em;
     color: var(--color-subtitle-grey);
-    margin-bottom: 0px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
+    margin-bottom: -30px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
