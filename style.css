@@ -1,782 +1,807 @@
 /* Estilos Gerais */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #333;
-    background-color: #f9f9f9;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
 }
 
 :root {
-    /* Cores de Verde */
-    --color-primary-green: #4CAF50; /* Verde principal para botões, ícones menores */
-    --color-primary-green-hover: #45a049; /* Verde principal hover */
+    /* Cores de Verde */
+    --color-primary-green: #4CAF50; /* Verde principal para botões, ícones menores */
+    --color-primary-green-hover: #45a049; /* Verde principal hover */
 
-    --color-cannabis-dark-green: #1A531A; /* NOVO! Verde escuro remetendo à cannabis */
-    --color-cannabis-darker-green-button: #0F3F0F; /* Um pouco mais escuro para botões de destaque (se necessário) */
+    --color-cannabis-dark-green: #1A531A; /* NOVO! Verde escuro remetendo à cannabis */
+    --color-cannabis-darker-green-button: #0F3F0F; /* Um pouco mais escuro para botões de destaque (se necessário) */
 
-    --color-light-green-bg: #E8F5E9; /* Fundo verde claro da seção de serviços */
-    --color-subtle-white-hover: rgba(255, 255, 255, 0.5); /* Branco suave para hover em fundos verdes */
+    --color-light-green-bg: #E8F5E9; /* Fundo verde claro da seção de serviços */
+    --color-subtle-white-hover: rgba(255, 255, 255, 0.5); /* Branco suave para hover em fundos verdes */
 
-    --color-gradient-start-hero: #3D993D; /* Cor para o início do gradiente do Hero (mantido como variável, mas não usado diretamente para o background-image) */
-    --color-hero-overlay-dark: rgba(0, 0, 0, 0.6); /* Opacidade inicial da sobreposição do Hero */
-    --color-hero-overlay-light: rgba(0, 0, 0, 0.4); /* Opacidade final da sobreposição do Hero */
+    --color-gradient-start-hero: #3D993D; /* Cor para o início do gradiente do Hero (mantido como variável, mas não usado diretamente para o background-image) */
+    --color-hero-overlay-dark: rgba(0, 0, 0, 0.6); /* Opacidade inicial da sobreposição do Hero */
+    --color-hero-overlay-light: rgba(0, 0, 0, 0.4); /* Opacidade final da sobreposição do Hero */
 
-    /* Cores Neutras */
-    --color-text-dark: #333;
-    --color-text-medium: #555;
-    --color-text-light: #777;
-    --color-subtitle-grey: #6C7A89; /* Cor do subtítulo "O que fazemos?" */
+    /* Cores Neutras */
+    --color-text-dark: #333;
+    --color-text-medium: #555;
+    --color-text-light: #777;
+    --color-subtitle-grey: #6C7A89; /* Cor do subtítulo "O que fazemos?" */
 
-    /* Cores de Fundo */
-    --color-light-bg: #f4f4f4; /* Mantenho este como cinza claro, o body é #f9f9f9 */
-    --color-white: #ffffff;
+    /* Cores de Fundo */
+    --color-light-bg: #f4f4f4; /* Mantenho este como cinza claro, o body é #f9f9f9 */
+    --color-white: #ffffff;
 
-    /* Sombras e Bordas */
-    --color-shadow-light: rgba(0, 0, 0, 0.1);
-    --color-shadow-medium: rgba(0, 0, 0, 0.15);
-    --color-shadow-heavy: rgba(0, 0, 0, 0.08); /* Para itens de serviço que eram caixas */
-    --color-border-light: #e0e0e0;
+    /* Sombras e Bordas */
+    --color-shadow-light: rgba(0, 0, 0, 0.1);
+    --color-shadow-medium: rgba(0, 0, 0, 0.15);
+    --color-shadow-heavy: rgba(0, 0, 0, 0.08); /* Para itens de serviço que eram caixas */
+    --color-border-light: #e0e0e0;
 }
 
 /* Estilos de Layout */
 .container {
-    max-width: 1290px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
 }
 
 .primary-btn {
-    background-color: var(--color-primary-green);
-    color: var(--color-white);
+    background-color: var(--color-primary-green);
+    color: var(--color-white);
 }
 .primary-btn:hover {
-    background-color: var(--color-primary-green-hover);
+    background-color: var(--color-primary-green-hover);
 }
 
 /* Top Bar */
 .top-bar {
-    background-color: var(--color-cannabis-dark-green);
-    color: var(--color-white);
-    padding: 10px 0;
-    font-size: 0.9em;
+    background-color: var(--color-cannabis-dark-green);
+    color: var(--color-white);
+    padding: 10px 0;
+    font-size: 0.9em;
 }
 
 .top-bar-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-contact-left span {
-    margin-right: 20px;
+    margin-right: 20px;
 }
 
 .top-contact-left a, .top-social-right a {
-    color: var(--color-white);
-    text-decoration: none;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .top-social-right a {
-    color: var(--color-white);
-    font-size: 1.2em;
-    margin-left: 15px;
-    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2em;
+    margin-left: 15px;
+    text-decoration: none;
 }
 
 .top-btn {
-    background-color: var(--color-cannabis-darker-green-button);
-    padding: 8px 15px;
-    border-radius: 3px;
+    background-color: var(--color-cannabis-darker-green-button);
+    padding: 8px 15px;
+    border-radius: 3px;
 }
 
 .top-btn:hover {
-    background-color: var(--color-cannabis-darker-green-button);
+    background-color: var(--color-cannabis-darker-green-button);
 }
 
 /* Header */
 .main-header {
-    background-color: var(--color-white);
-    padding: 20px 0;
-    box-shadow: 0 2px 5px var(--color-shadow-light);
+    background-color: var(--color-white);
+    padding: 20px 0;
+    box-shadow: 0 2px 5px var(--color-shadow-light);
 }
 
 .header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo a {
-    color: var(--color-cannabis-dark-green);
-    font-size: 1.8em;
-    font-weight: bold;
-    text-decoration: none;
+    color: var(--color-cannabis-dark-green);
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .logo span {
-    display: block;
-    font-size: 0.8em;
-    color: var(--color-text-medium);
+    display: block;
+    font-size: 0.8em;
+    color: var(--color-text-medium);
 }
 
 .menu-toggle {
-    display: none;
+    display: none;
 }
 
 
 /* Hero Section - ATUALIZADA */
 .hero {
-    position: relative;
-    background-image: url('./images/fundo.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 80px 0;
-    text-align: center;
+    position: relative;
+    background-image: url('./images/fundo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    text-align: center;
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, var(--color-hero-overlay-dark), var(--color-hero-overlay-light));
-    z-index: 1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, var(--color-hero-overlay-dark), var(--color-hero-overlay-light));
+    z-index: 1;
 }
 
 .hero-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-text {
-    flex: 1;
-    padding-right: 20px;
-    text-align: left;
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
 }
 
 .hero-text h1,
 .hero-text h2,
 .hero-text p {
-    color: var(--color-white);
+    color: var(--color-white);
 }
 
 .hero-text h1 {
-    font-size: 3em;
-    margin-bottom: -35px; /* Mantido conforme sua especificação */
+    font-size: 3em;
+    margin-bottom: -35px; /* Mantido conforme sua especificação */
 }
 
 .hero-text h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 1.1em;
-    margin-bottom: 30px;
+    font-size: 1.1em;
+    margin-bottom: 30px;
 }
 
 .hero .primary-btn {
-    background-color: var(--color-white);
-    color: var(--color-primary-green);
-    border: 2px solid var(--color-white);
-    padding: 12px 30px;
+    background-color: var(--color-white);
+    color: var(--color-primary-green);
+    border: 2px solid var(--color-white);
+    padding: 12px 30px;
 }
 
 .hero .primary-btn:hover {
-    background-color: var(--color-primary-green-hover);
-    color: var(--color-white);
-    border-color: var(--color-primary-green-hover);
+    background-color: var(--color-primary-green-hover);
+    color: var(--color-white);
+    border-color: var(--color-primary-green-hover);
 }
 
 .hero-image {
-    flex: 1;
-    text-align: center;
+    flex: 1;
+    text-align: center;
 }
 
 .hero-image img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px var(--color-shadow-light);
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px var(--color-shadow-light);
 }
 
 /* Features Section */
 .features {
-    padding: 60px 0;
-    background-color: var(--color-light-bg);
-    text-align: center;
+    padding: 60px 0;
+    background-color: var(--color-light-bg);
+    text-align: center;
 }
 
 .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .feature-item {
-    background-color: var(--color-white);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px var(--color-shadow-light);
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--color-shadow-light);
 }
 
 .icon-feature {
-    color: var(--color-primary-green);
-    font-size: 2.5em;
-    margin-bottom: 15px;
+    color: var(--color-primary-green);
+    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
 .feature-item h3 {
-    color: var(--color-text-dark);
-    margin-bottom: 10px;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
 }
 
 .feature-item p {
-    color: var(--color-text-light);
+    color: var(--color-text-light);
 }
 
 /* About Section */
 .about {
-    padding: 80px 0;
-    background-color: var(--color-light-bg);
+    padding: 80px 0;
+    background-color: var(--color-light-bg);
 }
 
 .about-content {
-    display: grid;
-    grid-template-columns: 380px 1fr;
-    gap: 30px;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 30px;
+    align-items: center;
 }
 
 .about-image {
-    text-align: left;
-    padding: 10px;
-    border: 1px solid var(--color-border-light);
-    border-radius: 5px;
-    background-color: var(--color-white);
-    box-shadow: 0 2px 5px var(--color-shadow-light);
+    text-align: left;
+    padding: 10px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 5px var(--color-shadow-light);
 }
 
 .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 3px;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
 }
 
 .about-text .about-subtitle {
-    display: block;
-    font-size: 1.3em;
-    color: var(--color-subtitle-grey);
-    margin-bottom: -30px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    display: block;
+    font-size: 1.3em;
+    color: var(--color-subtitle-grey);
+    margin-bottom: -30px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .about-text h2 {
-    color: var(--color-cannabis-dark-green);
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    line-height: 1.2;
+    color: var(--color-cannabis-dark-green);
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    line-height: 1.2;
 }
 
 .about-text p {
-    color: var(--color-text-medium);
-    margin-bottom: 15px;
-    font-size: 1em;
-    line-height: 1.6;
+    color: var(--color-text-medium);
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.6;
 }
 
 /* Services Section */
 .services {
-    padding: 50px 0;
-    background-color: var(--color-light-green-bg);
-    text-align: center;
+    padding: 50px 0;
+    background-color: var(--color-light-green-bg);
+    text-align: center;
 }
 
 .services .section-subtitle {
-    display: block;
-    font-size: 1.5em;
-    color: var(--color-subtitle-grey);
-    margin-top: 10px;
-    margin-bottom: -30px;
-    font-weight: 700;
+    display: block;
+    font-size: 1.5em;
+    color: var(--color-subtitle-grey);
+    margin-top: 10px;
+    margin-bottom: -30px;
+    font-weight: 700;
 }
 
 .services h2 {
-    color: var(--color-cannabis-dark-green);
-    font-size: 2.5em;
-    margin-bottom: 40px;
+    color: var(--color-cannabis-dark-green);
+    font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    margin-top: 30px;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+    align-items: stretch;
 }
 
 .service-item {
-    padding: 30px 10px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+    padding: 30px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
 }
 
 .service-item:hover {
-    background-color: var(--color-subtle-white-hover);
-    box-shadow: 0 2px 5px var(--color-shadow-light);
-    border-radius: 5px;
-    transform: translateY(-2px);
+    background-color: var(--color-subtle-white-hover);
+    box-shadow: 0 2px 5px var(--color-shadow-light);
+    border-radius: 5px;
+    transform: translateY(-2px);
 }
 
 .icon-service {
-    color: var(--color-primary-green);
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
+    color: var(--color-primary-green);
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
 }
 
 .service-item h3 {
-    color: var(--color-text-dark);
-    margin-bottom: 15px;
-    font-size: 1.4em;
+    color: var(--color-text-dark);
+    margin-bottom: 15px;
+    font-size: 1.4em;
 }
 
 .service-item p {
-    color: var(--color-text-light);
-    font-size: 1em;
-    margin-bottom: 10px;
-    flex-grow: 1;
+    color: var(--color-text-light);
+    font-size: 1em;
+    margin-bottom: 10px;
+    flex-grow: 1;
 }
 
 .service-item ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-    text-align: left;
-    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    text-align: left;
+    width: 100%;
 }
 
 .service-item ul li {
-    color: var(--color-text-light);
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    position: relative;
-    padding-left: 25px;
+    color: var(--color-text-light);
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 25px;
 }
 
 .service-item ul li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--color-primary-green);
-    font-weight: bold;
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-primary-green);
+    font-weight: bold;
 }
 
 .call-to-action {
-    margin-top: 40px;
+    margin-top: 40px;
 }
 
 .call-to-action p {
-    font-size: 1.2em;
-    color: var(--color-text-medium);
-    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: var(--color-text-medium);
+    margin-bottom: 20px;
 }
 
 /* FAQ/Diferenciais Section */
 .faq {
-    padding: 80px 0;
-    background-color: var(--color-light-bg);
-    text-align: center;
+    padding: 80px 0;
+    background-color: var(--color-light-bg);
+    text-align: center;
 }
 
 .faq-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
 }
 
 .faq-left h2 {
-    color: var(--color-cannabis-dark-green);
-    font-size: 2.5em;
-    margin-bottom: 30px;
+    color: var(--color-cannabis-dark-green);
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .faq-left {
-    padding: 30px;
-    background-color: var(--color-white);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px var(--color-shadow-heavy);
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--color-shadow-heavy);
 }
 .diferencial-item {
-    background-color: var(--color-white);
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px var(--color-shadow-heavy);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--color-white);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--color-shadow-heavy);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .diferencial-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 18px var(--color-shadow-medium);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px var(--color-shadow-medium);
 }
 
 .icon-diferencial {
-    color: var(--color-primary-green);
-    font-size: 3.5em;
-    margin-bottom: 15px;
-    display: block;
+    color: var(--color-primary-green);
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .diferencial-item h3 {
-    color: var(--color-text-dark);
-    margin-bottom: 10px;
-    font-size: 1.4em;
+    color: var(--color-text-dark);
+    margin-bottom: 10px;
+    font-size: 1.4em;
 }
 
 .diferencial-item p {
-    color: var(--color-text-medium);
-    margin-bottom: 0;
-    font-size: 0.95em;
+    color: var(--color-text-medium);
+    margin-bottom: 0;
+    font-size: 0.95em;
 }
 
 /* Contact Section - ATUALIZADA E CONSOLIDADA */
 .contact {
-    padding: 70px 0;
-    background-color: var(--color-light-bg);
+    padding: 70px 0;
+    background-color: var(--color-light-bg);
 }
 
 .contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 
 .contact-info, .contact-form {
-    background-color: var(--color-white);
-    padding: 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px var(--color-shadow-light);
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px var(--color-shadow-light);
 }
 
 /* Títulos das colunas de contato e formulário */
 .contact-info h2, .contact-form h2 {
-    color: var(--color-cannabis-dark-green);
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    text-align: center;
+    color: var(--color-cannabis-dark-green);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .contact-info p {
-    color: var(--color-text-dark); /* Corrigido para preto, como nas imagens de referência */
-    font-size: 1.05em;
-    margin-bottom: 12px;
-    line-height: 1.4;
+    color: var(--color-text-dark); /* Corrigido para preto, como nas imagens de referência */
+    font-size: 1.05em;
+    margin-bottom: 12px;
+    line-height: 1.4;
 }
 
 .contact-info p a {
-    color: var(--color-text-dark); /* Cor do link para combinar com o texto */
-    font-weight: 500;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: var(--color-text-dark); /* Cor do link para combinar com o texto */
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .contact-info p a:hover {
-    color: var(--color-cannabis-dark-green);
-    text-decoration: underline;
+    color: var(--color-cannabis-dark-green);
+    text-decoration: underline;
 }
 
 .contact-info p strong {
-    color: var(--color-text-dark);
-    font-weight: 700;
-    margin-right: 5px;
+    color: var(--color-text-dark);
+    font-weight: 700;
+    margin-right: 5px;
 }
 
 /* Estilos para o formulário de contato (consolidados e corrigidos) */
 .contact-form-inner {
-    padding-top: 10px;
+    padding-top: 10px;
 }
 
 .contact-intro {
-    font-size: 1.05em;
-    color: var(--color-text-medium);
-    margin-bottom: 25px;
-    line-height: 1.5;
-    text-align: center;
+    font-size: 1.05em;
+    color: var(--color-text-medium);
+    margin-bottom: 25px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .contact-form .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    color: var(--color-text-dark);
-    font-weight: 500;
-    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-text-dark);
+    font-weight: 500;
+    text-align: left;
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    font-size: 1em;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
 .contact-form textarea {
-    resize: vertical;
+    resize: vertical;
 }
 
 .contact-form .btn.primary-btn {
-    width: auto;
-    padding: 12px 30px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: var(--color-primary-green);
-    color: var(--color-white);
-    border: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
+    padding: 12px 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: var(--color-primary-green);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form .btn.primary-btn:hover {
-    background-color: var(--color-primary-green-hover);
-    color: var(--color-white);
+    background-color: var(--color-primary-green-hover);
+    color: var(--color-white);
 }
 
 .form-status {
-    margin-top: 20px;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--color-primary-green);
-    text-align: center;
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--color-primary-green);
+    text-align: center;
 }
 
 .form-status.success {
-    color: var(--color-primary-green);
+    color: var(--color-primary-green);
 }
 .form-status.error {
-    color: #d9534f;
+    color: #d9534f;
 }
 
 /* Footer */
 .main-footer {
-    background-color: var(--color-cannabis-dark-green);
-    color: var(--color-white);
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9em;
+    background-color: var(--color-cannabis-dark-green);
+    color: var(--color-white);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .footer-content p {
-    margin: 5px 0;
+    margin: 5px 0;
 }
 
 .footer-content a {
-    color: var(--color-white);
-    text-decoration: none;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .main-footer .developer-credit {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85em;
 }
 
 .main-footer .developer-credit a {
-    color: var(--color-light-green-bg);
-    font-weight: 600;
-    text-decoration: underline;
-    transition: color 0.3s ease;
+    color: var(--color-light-green-bg);
+    font-weight: 600;
+    text-decoration: underline;
+    transition: color 0.3s ease;
 }
 
 .main-footer .developer-credit a:hover {
-    color: #aaffaa;
+    color: #aaffaa;
 }
 
 .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #fff;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .whatsapp-float:hover {
-    background-color: #128C7E;
+    background-color: #128C7E;
 }
 
 .whatsapp-float i {
-    color: var(--color-white);
-    font-size: 1.5em;
+    color: var(--color-white);
+    font-size: 1.5em;
 }
 
 /* Media Queries para Responsividade */
 @media (max-width: 1024px) {
-    .hero-content, .about-content, .faq-content, .contact-content, .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
+    .hero-content, .about-content, .faq-content, .contact-content, .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    /* --- AJUSTES NA SEÇÃO 'ABOUT' PARA RESPONSIVIDADE --- */
+    .about-content {
+        grid-template-columns: 1fr; /* Garante que os itens se empilhem */
+        text-align: center;
+    }
 
-    .hero-text {
-        padding-right: 0;
-        margin-bottom: 30px;
-        text-align: center;
-    }
+    .about-image {
+        margin-bottom: 30px;
+        text-align: center;
+        width: auto;
+    }
+    
+    .about-image img {
+        max-width: 80%;
+        width: auto;
+        display: block;
+        margin: 0 auto;
+    }
 
-    .about-image {
-        margin-bottom: 30px;
-    }
+    .about-text {
+        text-align: center;
+        padding-top: 0; /* Remove padding extra que pode ter sido adicionado */
+    }
+    
+    .about-text .about-subtitle,
+    .about-text h2 {
+        text-align: center;
+    }
 
-    .faq-content {
-        grid-template-columns: 1fr;
-    }
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
 
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
+    .faq-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
-    /* *** MODIFICAÇÕES FEITAS AQUI PARA O TOPO E OUTROS AJUSTES *** */
-    .top-bar-content {
-        flex-direction: column; /* Organiza os itens um abaixo do outro */
-        align-items: center; /* Centraliza horizontalmente */
-        text-align: center;
-    }
-    
-    .top-contact-left {
-        margin-bottom: 10px; /* Adiciona espaço entre o contato e os ícones sociais */
-    }
+    /* *** MODIFICAÇÕES FEITAS AQUI PARA O TOPO E OUTROS AJUSTES *** */
+    .top-bar-content {
+        flex-direction: column; /* Organiza os itens um abaixo do outro */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center;
+    }
+    
+    .top-contact-left {
+        margin-bottom: 10px; /* Adiciona espaço entre o contato e os ícones sociais */
+    }
 
-    .top-contact-left span {
-        display: block; /* Faz cada item (email, telefone) ocupar uma linha inteira */
-        margin-right: 0;
-    }
-    /* *** FIM DAS MODIFICAÇÕES *** */
-    
-    .menu-toggle {
-        display: none;
-    }
+    .top-contact-left span {
+        display: block; /* Faz cada item (email, telefone) ocupar uma linha inteira */
+        margin-right: 0;
+    }
+    /* *** FIM DAS MODIFICAÇÕES *** */
+    
+    .menu-toggle {
+        display: none;
+    }
 
-    .hero-text h1 {
-        font-size: 2.5em;
-    }
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
 
-    .hero-text h2 {
-        font-size: 1.8em;
-    }
+    .hero-text h2 {
+        font-size: 1.8em;
+    }
 
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
 
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
 
-    .about-image {
-        margin-bottom: 20px;
-        text-align: center;
-        width: auto;
-    }
+    .about-image {
+        margin-bottom: 20px;
+        text-align: center;
+        width: auto;
+    }
 
-    .about-image img {
-        max-width: 80%;
-        width: auto;
-    }
+    .about-image img {
+        max-width: 80%;
+        width: auto;
+    }
 
-    .about-text {
-        text-align: center;
-    }
+    .about-text {
+        text-align: center;
+    }
 
-    .about-text .about-subtitle,
-    .about-text h2 {
-        text-align: center;
-    }
+    .about-text .about-subtitle,
+    .about-text h2 {
+        text-align: center;
+    }
 
-    .contact-info h2, .contact-form h2 {
-        text-align: center;
-    }
-    .contact-info p, .contact-form label {
-        text-align: center;
-    }
+    .contact-info h2, .contact-form h2 {
+        text-align: center;
+    }
+    .contact-info p, .contact-form label {
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
-    .hero-text h1 {
-        font-size: 2em;
-    }
+    .hero-text h1 {
+        font-size: 2em;
+    }
 
-    .hero-text h2 {
-        font-size: 1.5em;
-    }
-    
-    /* Outro ajuste para o topo em telas super pequenas */
-    .top-bar {
-        font-size: 0.8em; /* Diminui a fonte para que o texto caiba melhor */
-    }
+    .hero-text h2 {
+        font-size: 1.5em;
+    }
+    
+    /* Outro ajuste para o topo em telas super pequenas */
+    .top-bar {
+        font-size: 0.8em; /* Diminui a fonte para que o texto caiba melhor */
+    }
 
-    .top-social-right {
-        margin-top: 10px; /* Garante que haja um espaçamento se o layout da top bar se quebrar em várias linhas */
-    }
+    .top-social-right {
+        margin-top: 10px; /* Garante que haja um espaçamento se o layout da top bar se quebrar em várias linhas */
+    }
 }
