@@ -80,6 +80,11 @@ body {
     flex-wrap: wrap; /* Adicionado para quebrar a linha */
 }
 
+.top-contact-left {
+    display: flex;
+    align-items: center;
+}
+
 .top-contact-left span {
     margin-right: 20px;
 }
@@ -87,6 +92,11 @@ body {
 .top-contact-left a, .top-social-right a {
     color: var(--color-white);
     text-decoration: none;
+}
+
+.top-social-right {
+    display: flex;
+    align-items: center;
 }
 
 .top-social-right a {
@@ -678,13 +688,23 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        /* Adicionado para garantir que os itens fiquem um abaixo do outro e centralizados */
     }
     .top-contact-left {
+        flex-direction: column; /* Coloca os spans em coluna */
         margin-bottom: 10px;
+        align-items: center;
     }
+    .top-contact-left span {
+        margin-right: 0;
+        margin-bottom: 5px; /* Adiciona espaçamento entre os spans */
+        display: block; /* Garante que cada span ocupe uma linha inteira */
+    }
+
     .top-social-right {
         margin-top: 10px;
     }
+
     /* Alteração para o header */
     .header-content {
         flex-direction: column;
