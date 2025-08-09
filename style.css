@@ -524,9 +524,6 @@ body {
     margin-right: 5px;
 }
 
-/* Removido o estilo da caixa de CTA */
-/* .contact-info-cta-box foi removido do HTML, então os estilos dele não são mais necessários */
-
 /* Estilos para o formulário de contato (consolidados e corrigidos) */
 .contact-form-inner {
     padding-top: 10px;
@@ -699,6 +696,23 @@ body {
 }
 
 @media (max-width: 768px) {
+    /* *** MODIFICAÇÕES FEITAS AQUI PARA O TOPO E OUTROS AJUSTES *** */
+    .top-bar-content {
+        flex-direction: column; /* Organiza os itens um abaixo do outro */
+        align-items: center; /* Centraliza horizontalmente */
+        text-align: center;
+    }
+    
+    .top-contact-left {
+        margin-bottom: 10px; /* Adiciona espaço entre o contato e os ícones sociais */
+    }
+
+    .top-contact-left span {
+        display: block; /* Faz cada item (email, telefone) ocupar uma linha inteira */
+        margin-right: 0;
+    }
+    /* *** FIM DAS MODIFICAÇÕES *** */
+    
     .menu-toggle {
         display: none;
     }
@@ -755,5 +769,14 @@ body {
 
     .hero-text h2 {
         font-size: 1.5em;
+    }
+    
+    /* Outro ajuste para o topo em telas super pequenas */
+    .top-bar {
+        font-size: 0.8em; /* Diminui a fonte para que o texto caiba melhor */
+    }
+
+    .top-social-right {
+        margin-top: 10px; /* Garante que haja um espaçamento se o layout da top bar se quebrar em várias linhas */
     }
 }
