@@ -795,25 +795,50 @@ body {
         text-align: center;
     }
     
-    /* Alteração para o Carrossel na seção de Serviços */
+    /* Carrossel na seção de Serviços */
     .service-grid {
-        display: flex; /* Transforma em um contêiner flexível horizontal */
-        overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Deixa a rolagem mais suave */
-        -webkit-overflow-scrolling: touch; /* Otimiza a rolagem em dispositivos iOS */
-        gap: 20px; /* Adiciona espaçamento entre os cards */
-        padding-bottom: 20px; /* Espaço para a barra de rolagem não atrapalhar */
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+        padding-bottom: 20px;
     }
 
     .service-item {
-        flex: 0 0 80%; /* Cada card ocupa 80% da largura da tela */
-        scroll-snap-align: start; /* Posiciona o início de cada card na rolagem */
-        width: 80%; /* Define a largura para o carrossel */
-        max-width: 80%; /* Garantia de que a largura máxima é 80% */
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .service-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Carrossel na seção de Diferenciais (FAQ) */
+    .faq-left {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+        padding: 30px 20px; /* Adicionado um padding horizontal para melhor visualização */
+        background-color: var(--color-white); /* Mantido o fundo branco */
+        border-radius: 8px;
+        box-shadow: 0 4px 12px var(--color-shadow-heavy);
+    }
+    
+    .diferencial-item {
+        flex: 0 0 90%; /* Cada card ocupa 90% da largura da tela */
+        scroll-snap-align: center; /* Centraliza o card na rolagem */
+        width: 90%;
+        margin-bottom: 0; /* Removido o margin-bottom para o layout horizontal */
+        padding: 30px 10px; /* Ajuste no padding para não ficar muito largo */
     }
 
     /* Oculta a barra de rolagem, mas a funcionalidade de arrastar continua */
-    .service-grid::-webkit-scrollbar {
+    .faq-left::-webkit-scrollbar {
         display: none;
     }
 
