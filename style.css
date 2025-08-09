@@ -757,8 +757,45 @@ body {
         font-size: 1.8em;
     }
 
+    /* Modificação para o Carrossel na seção "O que fazemos" (Features) */
     .features-grid {
-        grid-template-columns: 1fr;
+        display: flex; /* Transforma em um contêiner flexível horizontal */
+        overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
+        scroll-snap-type: x mandatory; /* Deixa a rolagem mais suave */
+        -webkit-overflow-scrolling: touch; /* Otimiza a rolagem em dispositivos iOS */
+        gap: 20px;
+        padding: 0 10px; /* Adicionado um padding horizontal para melhor visualização */
+    }
+
+    .feature-item {
+        flex: 0 0 80%; /* Cada card ocupa 80% da largura da tela */
+        scroll-snap-align: center; /* Posiciona o card centralizado na rolagem */
+        width: 80%;
+    }
+
+    .features-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Carrossel na seção de Serviços */
+    .service-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .service-item {
+        flex: 0 0 80%;
+        scroll-snap-align: start;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .service-grid::-webkit-scrollbar {
+        display: none;
     }
 
     .about-content {
@@ -795,51 +832,20 @@ body {
         text-align: center;
     }
     
-    /* Carrossel na seção de Serviços */
-    .service-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        gap: 20px;
-        padding-bottom: 20px;
-    }
-
-    .service-item {
-        flex: 0 0 80%;
-        scroll-snap-align: start;
-        width: 80%;
-        max-width: 80%;
-    }
-
-    .service-grid::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Carrossel na seção de Diferenciais (FAQ) */
+    /* Voltando a seção de Diferenciais (FAQ) ao normal */
     .faq-left {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        gap: 20px;
-        padding: 30px 20px; /* Adicionado um padding horizontal para melhor visualização */
-        background-color: var(--color-white); /* Mantido o fundo branco */
+        display: block; /* Volta ao layout normal de bloco */
+        overflow-x: visible; /* Remove a rolagem horizontal */
+        padding: 30px;
+        background-color: var(--color-white);
         border-radius: 8px;
         box-shadow: 0 4px 12px var(--color-shadow-heavy);
     }
     
     .diferencial-item {
-        flex: 0 0 90%; /* Cada card ocupa 90% da largura da tela */
-        scroll-snap-align: center; /* Centraliza o card na rolagem */
-        width: 90%;
-        margin-bottom: 0; /* Removido o margin-bottom para o layout horizontal */
-        padding: 30px 10px; /* Ajuste no padding para não ficar muito largo */
-    }
-
-    /* Oculta a barra de rolagem, mas a funcionalidade de arrastar continua */
-    .faq-left::-webkit-scrollbar {
-        display: none;
+        width: auto;
+        margin-bottom: 30px; /* Restaura a margem de baixo */
+        padding: 30px;
     }
 
     .contact-info h2, .contact-form h2 {
