@@ -766,6 +766,7 @@ body {
         text-align: center;
     }
 
+    /* Modificação da imagem: Ajustado para o máximo possível */
     .about-image {
         margin-bottom: 20px;
         text-align: center;
@@ -775,13 +776,15 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0; /* REMOVIDO o padding para a imagem preencher totalmente */
     }
-    
-    /* Aumento do tamanho da imagem para ocupar mais espaço dentro do quadrado */
+
     .about-image img {
-        max-width: 90%; /* Aumentado de 80% para 90% */
-        max-height: 90%; /* Aumentado de 80% para 90% */
-        width: auto;
+        max-width: 100%; /* Aumentado para 100% */
+        max-height: 100%; /* Aumentado para 100% */
+        object-fit: cover; /* Adicionado para garantir que a imagem preencha o espaço sem distorcer */
+        width: 100%;
+        height: 100%;
     }
 
     .about-text {
