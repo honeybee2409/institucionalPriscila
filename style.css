@@ -77,7 +77,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Adicionado para quebrar a linha */
+    flex-wrap: wrap;
 }
 
 .top-contact-left {
@@ -127,7 +127,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Adicionado para quebrar a linha */
+    flex-wrap: wrap;
 }
 
 .logo a {
@@ -192,7 +192,7 @@ body {
 
 .hero-text h1 {
     font-size: 3em;
-    margin-bottom: -35px; /* Mantido conforme sua especificação */
+    margin-bottom: -35px;
 }
 
 .hero-text h2 {
@@ -300,7 +300,7 @@ body {
     display: block;
     font-size: 1.3em;
     color: var(--color-subtitle-grey);
-    margin-bottom: -30px; /* Sua última correção para aproximar "Conheça" e "Dra. Priscila Vargas" */
+    margin-bottom: -30px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -512,14 +512,14 @@ body {
 }
 
 .contact-info p {
-    color: var(--color-text-dark); /* Corrigido para preto, como nas imagens de referência */
+    color: var(--color-text-dark);
     font-size: 1.05em;
     margin-bottom: 12px;
     line-height: 1.4;
 }
 
 .contact-info p a {
-    color: var(--color-text-dark); /* Cor do link para combinar com o texto */
+    color: var(--color-text-dark);
     font-weight: 500;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -688,17 +688,16 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        /* Adicionado para garantir que os itens fiquem um abaixo do outro e centralizados */
     }
     .top-contact-left {
-        flex-direction: column; /* Coloca os spans em coluna */
+        flex-direction: column;
         margin-bottom: 10px;
         align-items: center;
     }
     .top-contact-left span {
         margin-right: 0;
-        margin-bottom: 5px; /* Adiciona espaçamento entre os spans */
-        display: block; /* Garante que cada span ocupe uma linha inteira */
+        margin-bottom: 5px;
+        display: block;
     }
 
     .top-social-right {
@@ -768,16 +767,24 @@ body {
         text-align: center;
     }
 
+    /* Modificação da imagem: ajustando para um quadrado */
     .about-image {
         margin-bottom: 20px;
         text-align: center;
-        width: auto;
+        width: 250px; /* Largura fixa */
+        height: 250px; /* Altura fixa (igual à largura) */
+        margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-image img {
-        max-width: 80%;
+        max-width: 100%;
+        max-height: 100%;
         width: auto;
     }
+    /* Fim da modificação */
 
     .about-text {
         text-align: center;
