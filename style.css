@@ -11,33 +11,33 @@ body {
 
 :root {
     /* Cores de Verde */
-    --color-primary-green: #4CAF50; /* Verde principal para botões, ícones menores */
-    --color-primary-green-hover: #45a049; /* Verde principal hover */
+    --color-primary-green: #4CAF50;
+    --color-primary-green-hover: #45a049;
 
-    --color-cannabis-dark-green: #1A531A; /* NOVO! Verde escuro remetendo à cannabis */
-    --color-cannabis-darker-green-button: #0F3F0F; /* Um pouco mais escuro para botões de destaque (se necessário) */
+    --color-cannabis-dark-green: #1A531A;
+    --color-cannabis-darker-green-button: #0F3F0F;
 
-    --color-light-green-bg: #E8F5E9; /* Fundo verde claro da seção de serviços */
-    --color-subtle-white-hover: rgba(255, 255, 255, 0.5); /* Branco suave para hover em fundos verdes */
+    --color-light-green-bg: #E8F5E9;
+    --color-subtle-white-hover: rgba(255, 255, 255, 0.5);
 
-    --color-gradient-start-hero: #3D993D; /* Cor para o início do gradiente do Hero (mantido como variável, mas não usado diretamente para o background-image) */
-    --color-hero-overlay-dark: rgba(0, 0, 0, 0.6); /* Opacidade inicial da sobreposição do Hero */
-    --color-hero-overlay-light: rgba(0, 0, 0, 0.4); /* Opacidade final da sobreposição do Hero */
+    --color-gradient-start-hero: #3D993D;
+    --color-hero-overlay-dark: rgba(0, 0, 0, 0.6);
+    --color-hero-overlay-light: rgba(0, 0, 0, 0.4);
 
     /* Cores Neutras */
     --color-text-dark: #333;
     --color-text-medium: #555;
     --color-text-light: #777;
-    --color-subtitle-grey: #6C7A89; /* Cor do subtítulo "O que fazemos?" */
+    --color-subtitle-grey: #6C7A89;
 
     /* Cores de Fundo */
-    --color-light-bg: #f4f4f4; /* Mantenho este como cinza claro, o body é #f9f9f9 */
+    --color-light-bg: #f4f4f4;
     --color-white: #ffffff;
 
     /* Sombras e Bordas */
     --color-shadow-light: rgba(0, 0, 0, 0.1);
     --color-shadow-medium: rgba(0, 0, 0, 0.15);
-    --color-shadow-heavy: rgba(0, 0, 0, 0.08); /* Para itens de serviço que eram caixas */
+    --color-shadow-heavy: rgba(0, 0, 0, 0.08);
     --color-border-light: #e0e0e0;
 }
 
@@ -147,8 +147,7 @@ body {
     display: none;
 }
 
-
-/* Hero Section - ATUALIZADA */
+/* Hero Section */
 .hero {
     position: relative;
     background-image: url('./images/fundo.png');
@@ -484,7 +483,7 @@ body {
     font-size: 0.95em;
 }
 
-/* Contact Section - ATUALIZADA E CONSOLIDADA */
+/* Contact Section */
 .contact {
     padding: 70px 0;
     background-color: var(--color-light-bg);
@@ -536,7 +535,7 @@ body {
     margin-right: 5px;
 }
 
-/* Estilos para o formulário de contato (consolidados e corrigidos) */
+/* Estilos para o formulário de contato */
 .contact-form-inner {
     padding-top: 10px;
 }
@@ -727,7 +726,7 @@ body {
         margin-bottom: 30px;
         text-align: center;
     }
-    
+
     .hero-image {
         display: none;
     }
@@ -767,24 +766,23 @@ body {
         text-align: center;
     }
 
-    /* Modificação da imagem: ajustando para um quadrado */
     .about-image {
         margin-bottom: 20px;
         text-align: center;
-        width: 250px; /* Largura fixa */
-        height: 250px; /* Altura fixa (igual à largura) */
-        margin: 0 auto 20px; /* Centraliza a imagem e adiciona margem inferior */
+        width: 250px;
+        height: 250px;
+        margin: 0 auto 20px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    
+    /* Aumento do tamanho da imagem para ocupar mais espaço dentro do quadrado */
     .about-image img {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 90%; /* Aumentado de 80% para 90% */
+        max-height: 90%; /* Aumentado de 80% para 90% */
         width: auto;
     }
-    /* Fim da modificação */
 
     .about-text {
         text-align: center;
