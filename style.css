@@ -786,7 +786,7 @@ body {
 /* IMAGEM DO POP-UP - MELHORADO */
 .modal-image {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 90vh;
     object-fit: contain; /* ESSA PROPRIEDADE GARANTE QUE A IMAGEM NÃO SERÁ CORTADA */
     display: block;
     margin: 0 auto;
@@ -993,3 +993,4 @@ body {
         font-size: 1.5em;
     }
 }
+
