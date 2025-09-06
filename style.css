@@ -782,11 +782,11 @@ body {
     text-align: center;
 }
 
-/* IMAGEM DO POP-UP - MELHORADO */
+/* IMAGEM DO POP-UP - MELHORADO (Correção da visualização) */
 .modal-image {
     max-width: 100%;
-    max-height: 100vh; /* Permite que a imagem ocupe até 100% da altura da janela de visualização */
-    object-fit: contain;
+    max-height: 100vh;
+    object-fit: contain; /* ESSA PROPRIEDADE GARANTE QUE A IMAGEM NÃO SERÁ CORTADA */
     display: block;
     margin: 0 auto;
 }
