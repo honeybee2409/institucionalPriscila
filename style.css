@@ -776,7 +776,7 @@ body {
 /* CONTAINER DO POP-UP - MELHORADO */
 .image-modal-content {
     position: relative;
-    max-width: 90%;
+    max-width: 50%;
     max-height: 90%;
     padding: 0; /* REMOVIDO O PADDING PARA APROVEITAR MAIS ESPAÇO */
     text-align: center;
@@ -993,4 +993,5 @@ body {
         font-size: 1.5em;
     }
 }
+
 
