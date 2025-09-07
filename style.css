@@ -430,8 +430,8 @@ body {
 
 .faq-content {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 0px;
+    grid-template-columns: repeat(3, 1fr); /* Alterado para 3 colunas */
+    gap: 30px; /* Adicionado um espaçamento entre os itens */
 }
 
 .faq-left h2 {
