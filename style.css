@@ -319,10 +319,10 @@ body {
     line-height: 1.6;
 }
 
-/* Services Section */
+/* Services Section - ESTILO ATUALIZADO 2.0 */
 .services {
-    padding: 50px 0;
-    background-color: var(--color-light-green-bg);
+    padding: 80px 0;
+    background-color: var(--color-light-bg);
     text-align: center;
 }
 
@@ -338,128 +338,95 @@ body {
 .services h2 {
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 10px;
-    margin-top: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Alterado: Layout Fixo de 3 Colunas */
+    gap: 30px;
     align-items: stretch;
 }
 
 .service-item {
-    padding: 30px 10px;
+    background-color: var(--color-primary-green); /* Alterado: Fundo Verde */
+    padding: 35px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 }
 
 .service-item:hover {
-    background-color: var(--color-subtle-white-hover);
-    box-shadow: 0 2px 5px var(--color-shadow-light);
-    border-radius: 5px;
-    transform: translateY(-2px);
+    transform: translateY(-8px);
+    background-color: var(--color-primary-green-hover); /* Alterado: Hover para verde mais escuro */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .icon-service {
-    color: var(--color-primary-green);
+    color: var(--color-white); /* Alterado: Ícone branco */
     font-size: 3.5em;
-    margin-bottom: 10px;
-    display: block;
-    width: 100%;
-}
-
-.service-item h3 {
-    color: var(--color-text-dark);
-    margin-bottom: 15px;
-    font-size: 1.4em;
-}
-
-.service-item p {
-    color: var(--color-text-light);
-    font-size: 1em;
-    margin-bottom: 10px;
-    flex-grow: 1;
-}
-
-.service-item ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
-    text-align: left;
-    width: 100%;
-}
-
-.service-item ul li {
-    color: var(--color-text-light);
-    font-size: 0.9em;
-    margin-bottom: 5px;
-    position: relative;
-    padding-left: 25px;
-}
-
-.service-item ul li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--color-primary-green);
-    font-weight: bold;
-}
-
-.call-to-action {
-    margin-top: 40px;
-}
-
-.call-to-action p {
-    font-size: 1.2em;
-    color: var(--color-text-medium);
     margin-bottom: 20px;
 }
 
-/* FAQ/Diferenciais Section - Versão com "Caixa" envolvente */
+.service-item h3 {
+    color: var(--color-white); /* Alterado: Título branco */
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    flex-shrink: 0;
+}
+
+.service-item p {
+    color: rgba(255, 255, 255, 0.9); /* Alterado: Parágrafo branco com leve transparência */
+    font-size: 1em;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+
+/* FAQ/Diferenciais Section */
 .faq {
     padding: 80px 0;
-    background-color: var(--color-light-bg); /* Fundo sutil para a seção */
-    text-align: center; /* Centraliza o conteúdo dentro da seção */
+    background-color: var(--color-light-bg);
+    text-align: center;
 }
 
 .diferenciais-wrapper {
-    background-color: var(--color-white); /* Fundo branco para a caixa principal */
-    padding: 100px; /* Espaçamento interno da caixa */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px var(--color-shadow-light);
-    max-width: 1100px; /* Define uma largura máxima para a caixa */
-    margin: 0 auto; /* Centraliza a caixa na página */
+    background-color: var(--color-white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .faq h2 {
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
-    margin-bottom: 80px; /* Mais espaço abaixo do título */
+    margin-bottom: 40px;
 }
 
 .diferenciais-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
-    gap: 50px; /* Espaçamento entre as colunas */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .diferencial-item {
-    background-color: var(--color-white); /* Mantém o fundo branco para os itens */
+    background-color: var(--color-white);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra um pouco mais suave para os itens */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 85%; /* Garante que todos os cards tenham a mesma altura */
+    height: 100%;
 }
 
 .diferencial-item:hover {
@@ -484,24 +451,6 @@ body {
     color: var(--color-text-medium);
     margin-bottom: 0;
     font-size: 0.95em;
-}
-
-/* Media Query para responsividade da nova caixa */
-@media (max-width: 1024px) {
-    .diferenciais-wrapper {
-        padding: 30px; /* Reduz o padding interno em telas menores */
-        max-width: 90%; /* Ajusta a largura máxima da caixa */
-    }
-}
-
-@media (max-width: 768px) {
-    .diferenciais-wrapper {
-        padding: 20px;
-    }
-    .diferenciais-grid {
-        grid-template-columns: 1fr; /* Volta para 1 coluna em telas pequenas */
-        gap: 20px;
-    }
 }
 
 
@@ -753,8 +702,16 @@ body {
         margin-bottom: 30px;
     }
 
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); /* Layout de 2 colunas para tablets */
+    }
+
+    .diferenciais-wrapper {
+        padding: 30px;
+    }
+
     .diferenciais-grid {
-        grid-template-columns: 1fr; /* Em telas menores, volta para 1 coluna */
+        grid-template-columns: 1fr;
     }
 
     .contact-content {
@@ -794,24 +751,21 @@ body {
         display: none;
     }
 
-    .service-grid {
-        display: flex;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+    .diferenciais-wrapper {
+        padding: 20px;
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
         gap: 20px;
-        padding-bottom: 20px;
     }
 
-    .service-item {
-        flex: 0 0 80%;
-        scroll-snap-align: start;
-        width: 80%;
-        max-width: 80%;
+    .diferencial-item {
+        margin-bottom: 0;
     }
 
-    .service-grid::-webkit-scrollbar {
-        display: none;
+    .service-grid {
+        grid-template-columns: 1fr; /* 1 coluna em telas menores */
     }
 
     .about-content {
@@ -848,15 +802,6 @@ body {
         text-align: center;
     }
     
-    .diferencial-item {
-        width: auto;
-        margin-bottom: 30px; /* Adiciona margem inferior no modo de 1 coluna */
-    }
-    
-    .diferenciais-grid {
-        gap: 0; /* Remove o gap no modo de 1 coluna para não somar com a margem */
-    }
-
     .contact-info h2, .contact-form h2 {
         text-align: center;
     }
