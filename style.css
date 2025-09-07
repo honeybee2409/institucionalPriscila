@@ -424,7 +424,7 @@ body {
 /* FAQ/Diferenciais Section - VERSÃO CORRIGIDA E SIMPLIFICADA */
 .faq {
     padding: 80px 0;
-    background-color: #ffffff; /* Fundo branco para a seção como na sua imagem */
+    background-color: var(--color-light-bg); /* Fundo branco para a seção como na sua imagem */
 }
 
 .faq h2 {
