@@ -421,17 +421,26 @@ body {
     margin-bottom: 20px;
 }
 
-/* FAQ/Diferenciais Section - VERSÃO CORRIGIDA E SIMPLIFICADA */
+/* FAQ/Diferenciais Section - Versão com "Caixa" envolvente */
 .faq {
     padding: 80px 0;
-    background-color: var(--color-light-bg); /* Fundo branco para a seção como na sua imagem */
+    background-color: var(--color-light-bg); /* Fundo sutil para a seção */
+    text-align: center; /* Centraliza o conteúdo dentro da seção */
+}
+
+.diferenciais-wrapper {
+    background-color: var(--color-white); /* Fundo branco para a caixa principal */
+    padding: 40px; /* Espaçamento interno da caixa */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    max-width: 1100px; /* Define uma largura máxima para a caixa */
+    margin: 0 auto; /* Centraliza a caixa na página */
 }
 
 .faq h2 {
-    text-align: center;
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Mais espaço abaixo do título */
 }
 
 .diferenciais-grid {
@@ -441,20 +450,21 @@ body {
 }
 
 .diferencial-item {
-    background-color: var(--color-white);
+    background-color: var(--color-white); /* Mantém o fundo branco para os itens */
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px var(--color-shadow-heavy);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Sombra um pouco mais suave para os itens */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
 }
 
 .diferencial-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 18px var(--color-shadow-medium);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
 }
 
 .icon-diferencial {
@@ -474,6 +484,24 @@ body {
     color: var(--color-text-medium);
     margin-bottom: 0;
     font-size: 0.95em;
+}
+
+/* Media Query para responsividade da nova caixa */
+@media (max-width: 1024px) {
+    .diferenciais-wrapper {
+        padding: 30px; /* Reduz o padding interno em telas menores */
+        max-width: 90%; /* Ajusta a largura máxima da caixa */
+    }
+}
+
+@media (max-width: 768px) {
+    .diferenciais-wrapper {
+        padding: 20px;
+    }
+    .diferenciais-grid {
+        grid-template-columns: 1fr; /* Volta para 1 coluna em telas pequenas */
+        gap: 20px;
+    }
 }
 
 
