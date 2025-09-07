@@ -319,11 +319,20 @@ body {
     line-height: 1.6;
 }
 
-/* Services Section - ESTILO ATUALIZADO 2.0 */
+/* Services Section - ESTILO ATUALIZADO 3.0 (Com Caixa) */
 .services {
     padding: 80px 0;
-    background-color: var(--color-light-bg);
+    background-color: var(--color-light-bg); /* Fundo sutil para a seção */
     text-align: center;
+}
+
+.service-wrapper { /* Estilo da nova caixa */
+    background-color: var(--color-white);
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--color-shadow-light);
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .services .section-subtitle {
@@ -343,45 +352,44 @@ body {
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Alterado: Layout Fixo de 3 Colunas */
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Layout Fixo de 3 Colunas */
+    gap: 60px 30px; 
     align-items: stretch;
 }
 
 .service-item {
-    background-color: var(--color-primary-green); /* Alterado: Fundo Verde */
-    padding: 35px 25px;
+    background-color: var(--color-white); /* Fundo branco para os cards */
+    padding: 10px 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 5px var(--color-shadow-light);
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
 }
 
 .service-item:hover {
     transform: translateY(-8px);
-    background-color: var(--color-primary-green-hover); /* Alterado: Hover para verde mais escuro */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .icon-service {
-    color: var(--color-white); /* Alterado: Ícone branco */
+    color: var(--color-primary-green);
     font-size: 3.5em;
     margin-bottom: 20px;
 }
 
 .service-item h3 {
-    color: var(--color-white); /* Alterado: Título branco */
+    color: var(--color-cannabis-dark-green); /* Título Verde Escuro */
     margin-bottom: 15px;
     font-size: 1.5em;
     flex-shrink: 0;
 }
 
 .service-item p {
-    color: rgba(255, 255, 255, 0.9); /* Alterado: Parágrafo branco com leve transparência */
+    color: var(--color-text-medium); /* Parágrafo em tom de cinza, ou se preferir verde: var(--color-cannabis-dark-green) com rgba(0,0,0,0.8) */
     font-size: 1em;
     line-height: 1.7;
     flex-grow: 1;
@@ -390,16 +398,16 @@ body {
 
 /* FAQ/Diferenciais Section */
 .faq {
-    padding: 80px 0;
+    padding: 10px 0;
     background-color: var(--color-light-bg);
     text-align: center;
 }
 
 .diferenciais-wrapper {
     background-color: var(--color-white);
-    padding: 40px;
+    padding: 100px;
     border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 5px var(--color-shadow-light);
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -418,7 +426,7 @@ body {
 
 .diferencial-item {
     background-color: var(--color-white);
-    padding: 30px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -442,7 +450,7 @@ body {
 }
 
 .diferencial-item h3 {
-    color: var(--color-text-dark);
+    color: var(--color-cannabis-dark-green);
     margin-bottom: 10px;
     font-size: 1.4em;
 }
@@ -702,6 +710,11 @@ body {
         margin-bottom: 30px;
     }
 
+    .service-wrapper {
+        padding: 30px; /* Reduz o padding interno em telas menores */
+        max-width: 90%; /* Ajusta a largura máxima da caixa */
+    }
+
     .service-grid {
         grid-template-columns: repeat(2, 1fr); /* Layout de 2 colunas para tablets */
     }
@@ -751,21 +764,25 @@ body {
         display: none;
     }
 
-    .diferenciais-wrapper {
-        padding: 20px;
-    }
-
-    .diferenciais-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .diferencial-item {
-        margin-bottom: 0;
+    .service-wrapper {
+        padding: 40px;
     }
 
     .service-grid {
         grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    }
+
+    .diferenciais-wrapper {
+        padding: 40px;
+    }
+
+    .diferenciais-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .diferencial-item {
+        margin-bottom: 0;
     }
 
     .about-content {
