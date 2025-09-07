@@ -430,9 +430,9 @@ body {
 
 .diferenciais-wrapper {
     background-color: var(--color-white); /* Fundo branco para a caixa principal */
-    padding: 40px; /* Espaçamento interno da caixa */
+    padding: 100px; /* Espaçamento interno da caixa */
     border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    box-shadow: 0 2px 5px var(--color-shadow-light);
     max-width: 1100px; /* Define uma largura máxima para a caixa */
     margin: 0 auto; /* Centraliza a caixa na página */
 }
@@ -440,13 +440,13 @@ body {
 .faq h2 {
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
-    margin-bottom: 40px; /* Mais espaço abaixo do título */
+    margin-bottom: 80px; /* Mais espaço abaixo do título */
 }
 
 .diferenciais-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
-    gap: 30px; /* Espaçamento entre as colunas */
+    gap: 50px; /* Espaçamento entre as colunas */
 }
 
 .diferencial-item {
