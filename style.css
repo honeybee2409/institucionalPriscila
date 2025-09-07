@@ -425,23 +425,24 @@ body {
 .faq {
     padding: 80px 0;
     background-color: var(--color-light-bg);
+}
+
+.faq h2 {
     text-align: center;
+    color: var(--color-cannabis-dark-green);
+    font-size: 2.5em;
+    margin-bottom: 40px;
 }
 
-.faq-content {
+.diferenciais-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os diferenciais */
-    gap: 30px; /* Espaçamento entre os cards */
-    /* Removido `padding`, `background-color`, `border-radius`, `box-shadow` daqui */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
-
-/* Removido .faq-left h2, pois o título deve estar fora do grid dos cards */
-/* Removido o seletor .faq-left inteiramente se ele servia apenas como wrapper dos cards */
 
 .diferencial-item {
     background-color: var(--color-white);
     padding: 30px;
-    /* Removido margin-bottom aqui para usar o gap do grid */
     border-radius: 8px;
     box-shadow: 0 4px 12px var(--color-shadow-heavy);
     text-align: center;
@@ -727,7 +728,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .faq-content { /* Em telas menores, volta para 1 coluna */
+    .diferenciais-grid {
         grid-template-columns: 1fr;
     }
 
@@ -824,14 +825,15 @@ body {
         text-align: center;
     }
     
-    /* Voltando a seção de Diferenciais (FAQ) ao normal */
-    /* Removido o seletor .faq-left inteiramente se ele servia apenas como wrapper dos cards */
-    
     .diferencial-item {
         width: auto;
-        margin-bottom: 30px; /* Restaura a margem de baixo para o layout de uma coluna */
-        padding: 30px;
+        margin-bottom: 30px;
     }
+    
+    .diferenciais-grid {
+        gap: 0; /* Remove o gap no modo de uma coluna para usar o margin-bottom */
+    }
+
 
     .contact-info h2, .contact-form h2 {
         text-align: center;
@@ -841,7 +843,7 @@ body {
     }
     
     .image-modal-content {
-        max-width: 90%; /* Aumenta o tamanho do modal em telas menores */
+        max-width: 90%;
     }
 }
 
