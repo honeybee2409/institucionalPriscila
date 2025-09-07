@@ -430,26 +430,18 @@ body {
 
 .faq-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Alterado para 3 colunas */
-    gap: 30px; /* Adicionado um espaçamento entre os itens */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas para os diferenciais */
+    gap: 30px; /* Espaçamento entre os cards */
+    /* Removido `padding`, `background-color`, `border-radius`, `box-shadow` daqui */
 }
 
-.faq-left h2 {
-    color: var(--color-cannabis-dark-green);
-    font-size: 2.5em;
-    margin-bottom: 30px;
-}
+/* Removido .faq-left h2, pois o título deve estar fora do grid dos cards */
+/* Removido o seletor .faq-left inteiramente se ele servia apenas como wrapper dos cards */
 
-.faq-left {
-    padding: 30px;
-    background-color: var(--color-white);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px var(--color-shadow-heavy);
-}
 .diferencial-item {
     background-color: var(--color-white);
     padding: 30px;
-    margin-bottom: 30px;
+    /* Removido margin-bottom aqui para usar o gap do grid */
     border-radius: 8px;
     box-shadow: 0 4px 12px var(--color-shadow-heavy);
     text-align: center;
@@ -716,7 +708,7 @@ body {
         margin-top: 10px;
     }
 
-    .hero-content, .about-content, .faq-content, .contact-content, .footer-content {
+    .hero-content, .about-content, .contact-content, .footer-content {
         flex-direction: column;
         text-align: center;
     }
@@ -735,7 +727,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .faq-content {
+    .faq-content { /* Em telas menores, volta para 1 coluna */
         grid-template-columns: 1fr;
     }
 
@@ -833,18 +825,11 @@ body {
     }
     
     /* Voltando a seção de Diferenciais (FAQ) ao normal */
-    .faq-left {
-        display: block; /* Volta ao layout normal de bloco */
-        overflow-x: visible; /* Remove a rolagem horizontal */
-        padding: 30px;
-        background-color: var(--color-white);
-        border-radius: 8px;
-        box-shadow: 0 4px 12px var(--color-shadow-heavy);
-    }
+    /* Removido o seletor .faq-left inteiramente se ele servia apenas como wrapper dos cards */
     
     .diferencial-item {
         width: auto;
-        margin-bottom: 30px; /* Restaura a margem de baixo */
+        margin-bottom: 30px; /* Restaura a margem de baixo para o layout de uma coluna */
         padding: 30px;
     }
 
