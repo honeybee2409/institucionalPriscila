@@ -421,10 +421,10 @@ body {
     margin-bottom: 20px;
 }
 
-/* FAQ/Diferenciais Section */
+/* FAQ/Diferenciais Section - VERSÃO CORRIGIDA E SIMPLIFICADA */
 .faq {
     padding: 80px 0;
-    background-color: var(--color-light-bg);
+    background-color: #ffffff; /* Fundo branco para a seção como na sua imagem */
 }
 
 .faq h2 {
@@ -436,8 +436,8 @@ body {
 
 .diferenciais-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
+    gap: 30px; /* Espaçamento entre as colunas */
 }
 
 .diferencial-item {
@@ -476,6 +476,7 @@ body {
     font-size: 0.95em;
 }
 
+
 /* Contact Section */
 .contact {
     padding: 70px 0;
@@ -495,7 +496,6 @@ body {
     box-shadow: 0 2px 5px var(--color-shadow-light);
 }
 
-/* Títulos das colunas de contato e formulário */
 .contact-info h2, .contact-form h2 {
     color: var(--color-cannabis-dark-green);
     font-size: 2.5em;
@@ -528,7 +528,6 @@ body {
     margin-right: 5px;
 }
 
-/* Estilos para o formulário de contato */
 .contact-form-inner {
     padding-top: 10px;
 }
@@ -675,7 +674,6 @@ body {
 
 /* Media Queries para Responsividade */
 @media (max-width: 1024px) {
-    /* Alteração para top-bar */
     .top-bar-content {
         flex-direction: column;
         align-items: center;
@@ -696,7 +694,6 @@ body {
         margin-top: 10px;
     }
 
-    /* Alteração para o header */
     .header-content {
         flex-direction: column;
         align-items: center;
@@ -729,7 +726,7 @@ body {
     }
 
     .diferenciais-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Em telas menores, volta para 1 coluna */
     }
 
     .contact-content {
@@ -750,19 +747,18 @@ body {
         font-size: 1.8em;
     }
 
-    /* Modificação para o Carrossel na seção "O que fazemos" (Features) */
     .features-grid {
-        display: flex; /* Transforma em um contêiner flexível horizontal */
-        overflow-x: auto; /* Adiciona a barra de rolagem horizontal */
-        scroll-snap-type: x mandatory; /* Deixa a rolagem mais suave */
-        -webkit-overflow-scrolling: touch; /* Otimiza a rolagem em dispositivos iOS */
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
         gap: 20px;
-        padding: 0 10px; /* Adicionado um padding horizontal para melhor visualização */
+        padding: 0 10px;
     }
 
     .feature-item {
-        flex: 0 0 80%; /* Cada card ocupa 80% da largura da tela */
-        scroll-snap-align: center; /* Posiciona o card centralizado na rolagem */
+        flex: 0 0 80%;
+        scroll-snap-align: center;
         width: 80%;
     }
 
@@ -770,7 +766,6 @@ body {
         display: none;
     }
 
-    /* Carrossel na seção de Serviços */
     .service-grid {
         display: flex;
         overflow-x: auto;
@@ -827,13 +822,12 @@ body {
     
     .diferencial-item {
         width: auto;
-        margin-bottom: 30px;
+        margin-bottom: 30px; /* Adiciona margem inferior no modo de 1 coluna */
     }
     
     .diferenciais-grid {
-        gap: 0; /* Remove o gap no modo de uma coluna para usar o margin-bottom */
+        gap: 0; /* Remove o gap no modo de 1 coluna para não somar com a margem */
     }
-
 
     .contact-info h2, .contact-form h2 {
         text-align: center;
